@@ -77,7 +77,6 @@ open LicensesViewControllerExample.xcworkspace
 
 #### Requirements
 * iOS `8.0`
-* tvOS `9.0`
 * Swift `4.2`, `5.0`, `5.1`, `5.2`
 
 If you depend on Python `2.x` use `'~> 0.9.0'` in your Podfile. 
