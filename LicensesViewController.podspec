@@ -6,11 +6,14 @@ Pod::Spec.new do |s|
                         Recursively finds all LICENSE.* files in a given directory and generates that can be displayed via Settings.bundle or the provided view controller.
                        DESC
 
-  s.homepage         = "https://github.com/carloe/LicenseGenerator-iOS"
-  s.screenshot       = "https://github.com/carloe/LicenseGenerator-iOS/raw/master/screenshot.png"
+  s.homepage         = "https://github.com/volvogroup-mobility/LicenseGenerator-iOS"
+  s.screenshot       = "https://github.com/volvogroup-mobility/LicenseGenerator-iOS/raw/main/screenshot.png"
   s.license          = 'MIT'
-  s.author           = { "Carlo Eugster" => "carlo@relaun.ch" }
-  s.source           = { :git => "https://github.com/carloe/LicenseGenerator-iOS.git", :tag => s.version.to_s }
+  s.author           = { 
+    "Carlo Eugster" => "carlo@relaun.ch",
+    'Timothy G. Rundle' => 'timothy.rundle@volvo.com'
+  }
+  s.source           = { :git => "https://github.com/volvogroup-mobility/LicenseGenerator-iOS.git", :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
