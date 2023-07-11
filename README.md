@@ -31,7 +31,11 @@ You can optionally tell the generator to ignore certain paths. To do so use the 
 ## View Controller
 If your app doesn't use a `Settings.bundle` you can use the provided view controller to show the licenses.
 
-#### Installation
+### Installation
+
+Grab [credits.py](https://raw.githubusercontent.com/volvogroup-mobility/LicenseGenerator-iOS/main/credits.py) from this repo and add it to your project.
+
+#### Cocoapods
 
 Add LicensesViewController to your `Podfile`:
 
@@ -40,7 +44,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'LicensesViewController', '~> 0.10.0'
+pod 'LicensesViewController', :source => 'https://github.com/volvogroup-mobility/Podspecs.git' 
 ```
 
 Then tell Pod to install it:
@@ -49,9 +53,29 @@ Then tell Pod to install it:
 $ pod install
 ```
 
-Grab `credits.py` from this repo and add it to your project.
+#### Swift Package Manager
 
-#### Usage
+Add the following to Package.swift
+
+``` swift
+let package = Package(
+    ...
+    dependencies: [
+    .package(name: "LicensesViewController", url: "https://github.com/volvogroup-mobility/LicenseGenerator-iOS", from: "0.11.0+volvo2")
+    ],
+    targets: [
+    .target(
+        ...
+        dependencies: [
+        .product(name: "LicensesViewController", package: "LicensesViewController")
+        ],
+        ...
+    ),
+    ]
+)
+```
+
+### Usage
 
 Add the build script as described above and make sure the resulting plist is included in the app target.
 
