@@ -61,7 +61,7 @@ Add the following to Package.swift
 let package = Package(
     ...
     dependencies: [
-    .package(name: "LicensesViewController", url: "https://github.com/volvogroup-mobility/LicenseGenerator-iOS", from: "0.11.0+volvo2")
+    .package(name: "LicensesViewController", url: "https://github.com/volvogroup-mobility/LicenseGenerator-iOS", from: "0.11.0+volvo3")
     ],
     targets: [
     .target(

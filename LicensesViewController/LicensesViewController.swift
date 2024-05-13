@@ -130,6 +130,7 @@ class LicenseCell: UITableViewCell {
         titleLabel.textColor = UIColor.black
     }
     titleLabel.translatesAutoresizingMaskIntoConstraints = false
+    titleLabel.semanticContentAttribute = .forceLeftToRight
     titleLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
     titleLabel.lineBreakMode = .byTruncatingTail
     titleLabel.numberOfLines = 1
@@ -141,6 +142,7 @@ class LicenseCell: UITableViewCell {
         bodyLabel.textColor = UIColor.darkGray
     }
     bodyLabel.translatesAutoresizingMaskIntoConstraints = false
+    bodyLabel.semanticContentAttribute = .forceLeftToRight
     bodyLabel.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.footnote)
     bodyLabel.lineBreakMode = .byWordWrapping
     bodyLabel.numberOfLines = 0
